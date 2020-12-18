@@ -1,0 +1,79 @@
+:root{
+    --color-dark: rgba(0, 0, 0, 0.692); 
+    --color-light: rgba(255, 255, 255, 0.932);
+    --color-gold: rgba(247, 247, 130, 0.932); 
+}
+body{
+    font-family: 'Oswald' , sans-serif;
+    font-weight: 200;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    letter-spacing: .05rem;
+}
+.text-ligh{
+    color: var(--color-light) !important;
+}
+.text-dark{
+    color: var(--color-dark) !important;
+}
+.bg-ligh{
+    background-color: var(--color-light) !important;
+}
+.lead, .nav-link{
+    font-size: 1.6rem;
+}
+h1, h2, h3{
+    font-weight: 600;
+}
+.btn-primary{
+    background-color: var(--color-dark) !important;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.4rem;
+    padding: .5rem 2rem;
+}
+.btn-primary:hover{
+    background-color: var(--color-dark) !important;
+    border: 0;
+    opacity: .9;
+}
+.carousel-indicators{
+    margin:0;
+    display: block;
+    top: 50%;
+    right: 40px;
+    left: unset;
+    transform: translateY(-50%);
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.slide-number{
+    bottom: 20px;
+    right: 40px;
+}
+.py-6{
+    padding: 3.4rem;
+}
+.text-white-50{
+    color: rgba(255, 255, 255, .5)!important;
+}
+/*Configurar a celulares*/
+@media (max-width:992px) and (max-width: 1200px){
+    h1{
+        font-size: 2rem;
+    }
+    .lead, .btn-primary{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 991px){
+    .navbar{
+        position: sticky;
+    }
+    .hero-content{
+      padding: 4rem 0;  
+    }
+}
